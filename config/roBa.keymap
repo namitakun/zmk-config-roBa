@@ -14,6 +14,8 @@
     quick-tap-ms = <0>;
 };
 
+&msc { time-to-max-speed-ms = <300>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -67,7 +69,9 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "SCROLL_UP_DOWN2";
             #sensor-binding-cells = <2>;
-            bindings = <&none>, <&none>;
+            bindings = <&msc>, <&msc>;
+
+            tap-ms = <100>;
         };
 
         scroll_up_down: scroll_up_down {
@@ -76,7 +80,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
-            tap-ms = <20>;
+            tap-ms = <100>;
         };
     };
 
