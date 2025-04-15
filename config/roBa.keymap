@@ -53,11 +53,12 @@
         };
 
         at_macro: at_macro {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             label = "AT_MACRO";
             bindings = <&kp N2>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep_mods = <MOD_LSFT>;
         };
     };
 
