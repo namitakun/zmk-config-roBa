@@ -54,8 +54,13 @@
 
         at_macro: at_macro {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             label = "AT_MACRO";
-            bindings = <&kp LS &kp AT_SIGN>;
+            bindings = <
+                &macro_press &kp LSHFT
+                &kp AT_SIGN
+                &macro_release &kp LSHFT
+            >;
         };
     };
 
