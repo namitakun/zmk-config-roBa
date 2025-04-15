@@ -58,7 +58,7 @@
             label = "AT_MACRO";
             bindings = <
                 &macro_press &kp LSHFT
-                &kp AT_SIGN
+                &kp LS(NUMBER_2)
                 &macro_release &kp LSHFT
             >;
         };
