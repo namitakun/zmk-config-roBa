@@ -56,7 +56,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "AT_MACRO";
-            bindings = <&kp N2>, <&kp LBKT>;
+            bindings = <&kp N2>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
