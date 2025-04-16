@@ -323,6 +323,116 @@
                 <&macro_tap &kp GRAVE>,
                 <&macro_release &kp LSHFT>;
         };
+        macro_N1: macro_N1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "AT_MACRO";
+            wait-ms = <0>; // 必要なら調整
+            bindings =
+                <&macro_wait_time TIMEOUT>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp N1>,
+                <&macro_release &kp LSHFT>;
+        };
+        macro_N2: macro_N2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "AT_MACRO";
+            wait-ms = <0>; // 必要なら調整
+            bindings =
+                <&macro_wait_time TIMEOUT>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp N2>,
+                <&macro_release &kp LSHFT>;
+        };
+        macro_N3: macro_N3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "AT_MACRO";
+            wait-ms = <0>; // 必要なら調整
+            bindings =
+                <&macro_wait_time TIMEOUT>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHFT>;
+        };
+        macro_N4: macro_N4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "AT_MACRO";
+            wait-ms = <0>; // 必要なら調整
+            bindings =
+                <&macro_wait_time TIMEOUT>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp N4>,
+                <&macro_release &kp LSHFT>;
+        };
+        macro_N5: macro_N5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "AT_MACRO";
+            wait-ms = <0>; // 必要なら調整
+            bindings =
+                <&macro_wait_time TIMEOUT>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp N5>,
+                <&macro_release &kp LSHFT>;
+        };
+        macro_N6: macro_N6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "AT_MACRO";
+            wait-ms = <0>; // 必要なら調整
+            bindings =
+                <&macro_wait_time TIMEOUT>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp N6>,
+                <&macro_release &kp LSHFT>;
+        };
+        macro_N7: macro_N7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "AT_MACRO";
+            wait-ms = <0>; // 必要なら調整
+            bindings =
+                <&macro_wait_time TIMEOUT>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp N7>,
+                <&macro_release &kp LSHFT>;
+        };
+        macro_N8: macro_N8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "AT_MACRO";
+            wait-ms = <0>; // 必要なら調整
+            bindings =
+                <&macro_wait_time TIMEOUT>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp N9>,
+                <&macro_release &kp LSHFT>;
+        };
+        macro_N9: macro_N9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "AT_MACRO";
+            wait-ms = <0>; // 必要なら調整
+            bindings =
+                <&macro_wait_time TIMEOUT>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp N9>,
+                <&macro_release &kp LSHFT>;
+        };
+        macro_N0: macro_N0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "AT_MACRO";
+            wait-ms = <0>; // 必要なら調整
+            bindings =
+                <&macro_wait_time TIMEOUT>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp N0>,
+                <&macro_release &kp LSHFT>;
+        };
     };
 
     behaviors {
@@ -370,7 +480,7 @@
 
         KIGOU {
             bindings = <
-&kp EXCLAMATION  &HASH  &kp HASH       &kp DOLLAR     &kp PERCENT                                               &kp CARET        &kp AMPERSAND  &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp EXCLAMATION  &macro_N2  &kp HASH       &kp DOLLAR     &kp PERCENT                                               &kp CARET        &kp AMPERSAND  &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp F2           &kp F4       &kp F5         &kp LC(F)      &kp LC(G)    &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET
 &kp LC(Z)        &kp LC(X)    &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(B)    &kp EQUAL                    &kp TILDE       &kp DLLR         &kp PERCENT    &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE
 &trans           &trans       &trans         &trans         &trans       &trans                       &trans          &trans                                                               &kp PIPE
