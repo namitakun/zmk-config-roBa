@@ -59,22 +59,28 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LCTRL>,
-                <&macro_tap &kp SPACE>,
-                <&macro_release &kp LCTRL>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&kp LSHFT>;
         };
         macro_LANG2: macro_LANG2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            label = "macro_LANG2";
+            label = "LANG2_MACRO";
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_press &kp LCTRL>,
-                <&macro_tap &kp SPACE>,
-                <&macro_release &kp LCTRL>;
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
 
         macro_EXCLAMATION: macro_EXCLAMATION {
@@ -570,7 +576,7 @@
             bindings = <
 &kp Q      &kp W  &kp E         &kp R                      &kp T                                                       &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S  &kp D         &kp F                      &kp G        &kp LS(LG(S))            &mt LEFT_SHIFT MINUS  &kp H        &kp J  &kp K      &kp L    &lt 4 SEMICOLON
-&kp Z      &kp X  &kp C         &kp V                      &kp B        &macro_LANG2      &macro_LANG1         &kp N        &kp M  &kp COMMA  &kp DOT  &lt 5 SLASH
+&kp Z      &kp X  &kp C         &kp V                      &kp B        &macro_LANG2             &macro_LANG1          &kp N        &kp M  &kp COMMA  &kp DOT  &lt 5 SLASH
 &lt 3 ESC  &mo 2  &kp LEFT_ALT  &mt LEFT_SHIFT INT_HENKAN  &lt 2 SPACE  &mt LCTRL TAB            &kp BACKSPACE         &lt 1 ENTER                             &kp DEL
             >;
 
