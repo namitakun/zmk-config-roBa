@@ -76,6 +76,7 @@
                 <&macro_release &kp LCTRL>;
                 <&macro_release &kp LSHFT>;
         };
+
         macro_EXCLAMATION: macro_EXCLAMATION {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -83,11 +84,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N1>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N1>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_AT_SIGN: macro_AT_SIGN {
             compatible = "zmk,behavior-macro";
@@ -96,11 +99,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N2>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N2>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_HASH: macro_HASH {
             compatible = "zmk,behavior-macro";
@@ -109,11 +114,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N3>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N3>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_DOLLAR: macro_DOLLAR {
             compatible = "zmk,behavior-macro";
@@ -122,11 +129,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N4>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N4>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_PERCENT: macro_PERCENT {
             compatible = "zmk,behavior-macro";
@@ -135,11 +144,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N5>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N5>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_CARET: macro_CARET {
             compatible = "zmk,behavior-macro";
@@ -148,11 +159,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N6>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N6>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_AMPERSAND: macro_AMPERSAND {
             compatible = "zmk,behavior-macro";
@@ -161,11 +174,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N7>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N7>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_ASTERISK: macro_ASTERISK {
             compatible = "zmk,behavior-macro";
@@ -174,11 +189,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N8>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N8>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_LEFT_PAREN: macro_LEFT_PAREN {
             compatible = "zmk,behavior-macro";
@@ -187,11 +204,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N9>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N9>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_RIGHT_PAREN: macro_RIGHT_PAREN {
             compatible = "zmk,behavior-macro";
@@ -200,11 +219,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N0>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N0>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_UNDERSCORE: macro_UNDERSCORE {
             compatible = "zmk,behavior-macro";
@@ -213,11 +234,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp MINUS>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp MINUS>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_PLUS: macro_PLUS {
             compatible = "zmk,behavior-macro";
@@ -226,11 +249,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp EQUAL>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp EQUAL>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_LEFT_BRACE: macro_LEFT_BRACE {
             compatible = "zmk,behavior-macro";
@@ -239,11 +264,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp LBKT>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp LBKT>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_RIGHT_BRACE: macro_RIGHT_BRACE {
             compatible = "zmk,behavior-macro";
@@ -252,11 +279,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp RBKT>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp RBKT>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_COLON: macro_COLON {
             compatible = "zmk,behavior-macro";
@@ -265,11 +294,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp SEMI>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp SEMI>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_DOUBLE_QUOTE: macro_DOUBLE_QUOTE {
             compatible = "zmk,behavior-macro";
@@ -278,11 +309,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp APOSTROPHE>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp APOSTROPHE>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_LESS_THAN: macro_LESS_THAN {
             compatible = "zmk,behavior-macro";
@@ -291,11 +324,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp COMMA>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp COMMA>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_GREATER_THAN: macro_GREATER_THAN {
             compatible = "zmk,behavior-macro";
@@ -304,11 +339,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp DOT>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp DOT>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_QUESTION: macro_QUESTION {
             compatible = "zmk,behavior-macro";
@@ -317,11 +354,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp SLASH>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp SLASH>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_PIPE: macro_PIPE {
             compatible = "zmk,behavior-macro";
@@ -330,11 +369,13 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp BACKSLASH>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp BACKSLASH>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-
 
         macro_TILDE: macro_TILDE {
             compatible = "zmk,behavior-macro";
@@ -343,10 +384,14 @@
             wait-ms = <0>;
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp GRAVE>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp GRAVE>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
+
         macro_N1: macro_N1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -354,10 +399,14 @@
             wait-ms = <0>; // 必要なら調整
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N1>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N1>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
+
         macro_N2: macro_N2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -365,10 +414,14 @@
             wait-ms = <0>; // 必要なら調整
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N2>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N2>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
+
         macro_N3: macro_N3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -376,10 +429,14 @@
             wait-ms = <0>; // 必要なら調整
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N3>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N3>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
+
         macro_N4: macro_N4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -387,10 +444,14 @@
             wait-ms = <0>; // 必要なら調整
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N4>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N4>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
+
         macro_N5: macro_N5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -398,10 +459,14 @@
             wait-ms = <0>; // 必要なら調整
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N5>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N5>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
+
         macro_N6: macro_N6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -409,10 +474,14 @@
             wait-ms = <0>; // 必要なら調整
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N6>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N6>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
+
         macro_N7: macro_N7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -420,10 +489,14 @@
             wait-ms = <0>; // 必要なら調整
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N7>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N7>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
+
         macro_N8: macro_N8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -431,10 +504,14 @@
             wait-ms = <0>; // 必要なら調整
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N9>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N9>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
+
         macro_N9: macro_N9 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -442,10 +519,14 @@
             wait-ms = <0>; // 必要なら調整
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N9>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N9>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
+
         macro_N0: macro_N0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -453,9 +534,12 @@
             wait-ms = <0>; // 必要なら調整
             bindings =
                 <&macro_wait_time TIMEOUT>,
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &kp N0>,
-                <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp N0>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
     };
 
@@ -486,7 +570,7 @@
             bindings = <
 &kp Q      &kp W  &kp E         &kp R                      &kp T                                                       &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S  &kp D         &kp F                      &kp G        &kp LS(LG(S))            &mt LEFT_SHIFT MINUS  &kp H        &kp J  &kp K      &kp L    &lt 4 SEMICOLON
-&kp Z      &kp X  &kp C         &kp V                      &kp B        &lt 6 LC(LS(SPACE))      &kp LC(SPACE)         &kp N        &kp M  &kp COMMA  &kp DOT  &lt 5 SLASH
+&kp Z      &kp X  &kp C         &kp V                      &kp B        &macro_LANG2      &macro_LANG1         &kp N        &kp M  &kp COMMA  &kp DOT  &lt 5 SLASH
 &lt 3 ESC  &mo 2  &kp LEFT_ALT  &mt LEFT_SHIFT INT_HENKAN  &lt 2 SPACE  &mt LCTRL TAB            &kp BACKSPACE         &lt 1 ENTER                             &kp DEL
             >;
 
@@ -504,10 +588,10 @@
 
         KIGOU {
             bindings = <
-&kp EXCLAMATION  &macro_N2  &kp HASH       &kp DOLLAR     &kp PERCENT                                               &kp CARET        &kp AMPERSAND  &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp F2           &kp F4       &kp F5         &kp LC(F)      &kp LC(G)    &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&kp LC(Z)        &kp LC(X)    &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(B)    &kp EQUAL                    &kp TILDE       &kp DLLR         &kp PERCENT    &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&trans           &trans       &trans         &trans         &trans       &trans                       &trans          &trans                                                               &kp PIPE
+&macro_EXCLAMATION  &macro_AT_SIGN  &macro_HASH    &macro_DOLLAR  &macro_PERCENT                                               &macro_CARET  &macro_AMPERSAND  &macro_ASTERISK      &macro_LEFT_PAREN  &macro_RIGHT_PAREN
+&kp F2              &kp F4          &kp F5         &kp LC(F)      &kp LC(G)       &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &macro_PLUS   &kp EQUAL         &macro_DOUBLE_QUOTE  &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+&kp LC(Z)           &kp LC(X)       &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(B)       &kp EQUAL                    &kp TILDE       &kp DLLR      &macro_PLUS       &kp BACKSLASH        &macro_LEFT_BRACE  &macro_RIGHT_BRACE
+&trans              &trans          &trans         &trans         &trans          &trans                       &trans          &trans                                                                  &kp PIPE
             >;
         };
 
