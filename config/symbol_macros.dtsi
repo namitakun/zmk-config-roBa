@@ -1,3 +1,5 @@
+#define TIMEOUT 50
+
 / {
     macros {
         // ! : Shift + 1
