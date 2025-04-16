@@ -52,6 +52,30 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+        macro_LANG1: macro_LANG1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "LANG1_MACRO";
+            wait-ms = <0>;
+            bindings =
+                <&macro_wait_time TIMEOUT>,
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp SPACE>,
+                <&macro_release &kp LCTRL>;
+        };
+        macro_LANG2: macro_LANG2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "macro_LANG2";
+            wait-ms = <0>;
+            bindings =
+                <&macro_wait_time TIMEOUT>,
+                <&macro_press &kp LSHFT>,
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp SPACE>,
+                <&macro_release &kp LCTRL>;
+                <&macro_release &kp LSHFT>;
+        };
         macro_EXCLAMATION: macro_EXCLAMATION {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
