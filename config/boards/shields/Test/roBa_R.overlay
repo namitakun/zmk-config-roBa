@@ -1,4 +1,5 @@
 #include "roBa.dtsi"
+#include <zephyr/dt-bindings/gpio/gpio.h>
 
 &xiao_serial { status = "disabled"; };
 
@@ -61,41 +62,38 @@
     };
 };
 
-/* xiao_ble_touch.overlay */
-#include <zephyr/dt-bindings/gpio/gpio.h>
 
-/* 1キーだけの GPIO-Direct スキャン */
-&gpio0 {
+
+/ {
+    /* 1. 追加 GPIO キー定義 ---------------------------------- */
     touch_in: touch_in {
-        gpios = <&gpio0 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        gpios = <&gpio0 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;  /* P0.16 (D7/A7) */
     };
-};
 
-&kscan_touch: kscan_touch {
-    compatible = "zmk,kscan-gpio-direct";
-    input-keys = <&touch_in>;
-    debounce-ms = <5>;
-    label = "TTP223B_SCAN";
-};
+    /* 2. 1キーだけの GPIO-Direct KSCAN ----------------------- */
+    kscan_touch: kscan_touch {
+        compatible = "zmk,kscan-gpio-direct";
+        input-keys = <&touch_in>;
+        debounce-ms = <5>;
+        label = "TTP223B_SCAN";
+    };
 
-/* レイヤー Momentary ビヘイビア */
-&behaviors {
+    /* 3. レイヤー Momentary ビヘイビア ----------------------- */
     touch_layer_hold: touch_layer_hold {
         compatible = "zmk,behavior-momentary-layer";
-        binding-layer = <4>;      /* ← 好きなレイヤー番号に */
+        binding-layer = <3>;           /* ← 有効にしたいレイヤー番号 */
         #binding-cells = <0>;
     };
-};
 
-/* side-band ラッパーで既存マトリクスと共存 */
-&kscan_touch {
-    sideband {
+    /* 4. side-band ラッパーで既存マトリクスと共存 ----------- */
+    kscan_touch_sideband: kscan_touch_sideband {
         compatible = "zmk,kscan-sideband-behaviors";
-        kscan = <&kscan_touch>;
+        kscan = <&kscan_touch>;        /* ← ここで参照（& が付く） */
         auto-enable;
 
         touch_key {
-            column = <0>; row = <0>;
+            column = <0>;
+            row    = <0>;
             bindings = <&touch_layer_hold>;
         };
     };
