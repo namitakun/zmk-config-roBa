@@ -97,4 +97,8 @@
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <10>;
     };
+    touchkey1: touchkey {
+        compatible = "zmk,kscan-gpio-direct";
+        input-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    };
 };
