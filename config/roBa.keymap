@@ -572,6 +572,17 @@
             tap-ms = <20>;
         };
     };
+    ttp223tap: ttp223tap{
+        compatible = "zmk,kscan-sideband-behaviors";
+        kscan = <&touchkey1>;
+        auto-enable;
+
+        touch{
+            column = <0>;
+            row = <0>;
+            bindings = <&mo 4>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
